@@ -1,0 +1,89 @@
+.target-conteiner {
+  width: 100%;
+  margin-top: 30px;
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc(100% / 4 - 22.5px);
+  }
+}
+
+.first::before {
+  background-color: $bg;
+  border-radius: 4px;
+  display: block;
+  content: "";
+  background-image: url(../img/Group.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 120px;
+  margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
+}
+.second::before {
+  background-color: $bg;
+  border-radius: 4px;
+  display: block;
+  content: "";
+  background-image: url(../img/clock.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 120px;
+  margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
+}
+.three::before {
+  background-color: $bg;
+  border-radius: 4px;
+  display: block;
+  content: "";
+  background-image: url(../img/diagram.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 120px;
+  margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
+}
+.four::before {
+  background-color: $bg;
+  border-radius: 4px;
+  display: block;
+  content: "";
+  background-image: url(../img/astronaut.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 120px;
+  margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
+}
+.target-conteiner .text-header {
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
+}

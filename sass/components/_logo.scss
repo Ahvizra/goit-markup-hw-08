@@ -1,0 +1,23 @@
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.19;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+  }
+}
+.web {
+  color: $acent;
+}
+.menu-logo {
+  @media screen and (min-width: 768px) {
+    padding-right: 68px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-right: 93px;
+  }
+}

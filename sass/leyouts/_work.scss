@@ -1,0 +1,30 @@
+.our-work {
+  padding-bottom: 94px;
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
+.work-img {
+  position: relative;
+  max-height: 294px;
+  width: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.work-conteiner {
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.img-disk {
+  position: absolute;
+  display: block;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  text-align: center;
+  color: #ffffff;
+  background-color: rgba(47, 48, 58, 0.8);
+}

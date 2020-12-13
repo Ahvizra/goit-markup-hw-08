@@ -1,0 +1,42 @@
+.name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+
+.team-section {
+  background-color: $bg;
+}
+.person {
+  background-color: $white;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    width: calc(100% / 2 - 22.5px);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc(100% / 4 - 22.5px);
+    margin-bottom: 0px;
+  }
+  &:not(:last-child) {
+    margin-bottom: 30px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0px;
+    }
+  }
+}
+.person .name:last-child {
+  padding-bottom: 30px;
+}
+.person .name:first-child {
+  padding-top: 30px;
+}
+.person .text {
+  padding-top: 10px;
+}

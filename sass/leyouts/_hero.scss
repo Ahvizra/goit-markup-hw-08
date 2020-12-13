@@ -1,0 +1,51 @@
+.hero {
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+  }
+  &-conteiner {
+    width: 360px;
+    @media screen and (min-width: 1200px) {
+      width: 696px;
+    }
+  }
+}
+.motivation {
+  background-color: #c4c4c4;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../img/heromobile.jpg);
+  height: 400px;
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../img/herotab.jpg);
+    height: 400px;
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../img/herobg.png);
+    height: 600px;
+  }
+}
