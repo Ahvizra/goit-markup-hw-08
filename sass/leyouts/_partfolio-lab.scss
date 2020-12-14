@@ -1,16 +1,24 @@
 .partfolio-pic {
   display: block;
-  width: calc(100% / 3 - 30px);
-  margin-left: 30px;
-  margin-top: 30px;
+  width: 100%;
   border: 1px solid #eeeeee;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
+  @media screen and (min-width: 768px) {
+    width: calc(100% / 2 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc(100% / 3 - 30px);
+  }
   &:focus,
   &:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+  &:not(:first-child) {
+    margin-top: 30px;
   }
 }
 
@@ -50,8 +58,10 @@
   flex-wrap: wrap;
   padding: 0px;
   list-style-type: none;
-  margin-left: -30px;
-  margin-top: -30px;
+  @media screen and (min-width: 1200px) {
+    margin-left: -30px;
+    margin-top: -30px;
+  }
 }
 
 .prod-name {
@@ -72,5 +82,11 @@
   color: $gray;
 }
 .content {
-  padding-bottom: 94px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 66px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-bottom: 94px;
+  }
 }

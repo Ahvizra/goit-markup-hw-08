@@ -125,13 +125,14 @@
 }
 .tab-colum .menu {
   margin-bottom: 16px;
-  @media screen and (max-width: 1199px) {
-    margin-right: 0px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0px;
   }
 }
 
 .mobile {
   display: flex;
+  z-index: 10;
   opacity: 1;
   flex-direction: column;
   text-align: center;
@@ -146,6 +147,7 @@
   padding-bottom: 60px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
     0px 1px 3px rgba(0, 0, 0, 0.16);
+
   @media screen and (min-width: 768px) {
     position: static;
     flex-direction: row;
@@ -153,18 +155,26 @@
     text-align: left;
     padding-top: 0px;
     padding-bottom: 0px;
+    box-shadow: none;
   }
-}
-.mobile-padding {
-  padding-bottom: 60px;
-}
-.mobile-padding .menu:not(:last-child) {
-  margin-bottom: 50px;
-}
-.mobile-open-button {
-  fill: $black;
-  width: 40px;
-  height: 40px;
+
+  &-padding {
+    padding-bottom: 60px;
+    @media screen and (min-width: 768px) {
+      padding-bottom: 0px;
+    }
+  }
+  &-padding .menu:not(:last-child) {
+    margin-bottom: 50px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0px;
+    }
+  }
+  &-open-button {
+    fill: $black;
+    width: 40px;
+    height: 40px;
+  }
 }
 .mobilemenu {
   position: absolute;
@@ -172,14 +182,38 @@
   top: 10px;
   background: $white;
   border: none;
+  @media screen and (min-width: 768px) {
+    visibility: hidden;
+    opacity: 0;
+  }
 
   &:focus .mobile-open-button,
   &:hover .mobile-open-button {
     fill: $acent;
   }
+  &:focus .mobile-close-button,
+  &:hover .mobile-close-button {
+    fill: $acent;
+  }
+  &.close-btn .mobile-close-button {
+    visibility: visible;
+  }
+  &.close-btn .mobile-open-button {
+    visibility: hidden;
+  }
+  .mobile-close-button {
+    visibility: hidden;
+  }
+  .mobile-open-button {
+    visibility: visible;
+  }
 }
-.is-close {
+.is-open {
   visibility: hidden;
   opacity: 0;
-  pointer-events: none;
+  @media screen and (min-width: 768px) {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+  }
 }

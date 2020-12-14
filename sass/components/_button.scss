@@ -26,8 +26,12 @@
   margin-right: 6px;
   background: $bg;
   border: 0;
+  margin-bottom: 15px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0px;
+  }
 
   &:focus,
   &:hover {
@@ -38,8 +42,19 @@
   }
 }
 .filter {
-  padding-top: 94px;
-  padding-bottom: 50px;
+  padding-top: 66px;
+  padding-bottom: 40px;
   display: flex;
-  justify-content: center;
+  justify-content: left;
+  flex-wrap: wrap;
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    flex-wrap: nowrap;
+    padding-top: 66px;
+    padding-bottom: 40px;
+    @media screen and (min-width: 1200px) {
+      padding-top: 60px;
+      padding-bottom: 30px;
+    }
+  }
 }

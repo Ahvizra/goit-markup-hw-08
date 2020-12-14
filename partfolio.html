@@ -12,25 +12,31 @@
 <body>
     <header class="header-border">
         <div class="container header">
-            <nav class="flex-item">
-                <a href="" class="logo menu-logo"><span class="web">Web</span>Studio</a>
-                <ul class="flex-item">
+            <button class="mobilemenu" type="button" aria-expanded="false" aria-controls="mobile" data-menu-button>
+                <svg width=" 40" height="40" class="">
+                    <use class="mobile-open-button" href="./img/sprite.svg#mobilemenu"></use>
+                    <use class="mobile-close-button" href="./img/sprite.svg#mobile-x"></use>
+                </svg>
+            </button>
+            <a href="" class="logo menu-logo"><span class="web">Web</span>Studio</a>
+            <nav class="flex-item mobile is-open" id="mobile" data-menu>
+                <ul class="flex-item mobile-padding">
                     <li class="menu"><a href="./index.html" class="link menu-link">Студия</a></li>
                     <li class="menu"><a href="./partfolio.html" class="link menu-link curent">Портфолио</a></li>
                     <li class="menu"><a href="#Kontakt" class="link menu-link">Контакты</a></li>
                 </ul>
+                <ul class="flex-item tab-colum">
+                    <li class="menu"><a class="link text malto" href="malto:info@devstudio.com">
+                            <svg class="heder-ico-mail">
+                                <use href="./img/sprite.svg#envelope-hover"></use>
+                            </svg>
+                            info@devstudio.com</a></li>
+                    <li class="menu"><a class="link text tel" href="tel:+380961111111">
+                            <svg class="heder-ico-phone">
+                                <use href="./img/sprite.svg#smartphone"></use>
+                            </svg>+38 096 111 11 11</a></li>
+                </ul>
             </nav>
-            <ul class="flex-item">
-                <li class="menu"><a class="link text malto" href="malto:info@devstudio.com">
-                    <svg class="heder-ico-mail">
-                        <use href="./img/sprite.svg#envelope-hover"></use>
-                    </svg>
-                    info@devstudio.com</a></li>
-                <li class="menu"><a class="link text tel" href="tel:+380961111111">
-               <svg class="heder-ico-phone">
-               <use href="./img/sprite.svg#smartphone"></use>
-               </svg>+38 096 111 11 11</a></li>
-            </ul>
         </div>
     </header>
 <main>
@@ -178,64 +184,66 @@
  </main>
     <footer class="footer">
         <div class="container footer-container">
-            <address class="address">
-                <ul class="footer-menu"><a name="Kontakt"></a>
-                    <li class="footer-logo">
-                        <a href="" class="dark_bg link logo"><span
-                                class="web">Web</span>Studio</a>
-                    </li>
-                    <Li class="footer-list">
-                        <a href="https://goo.gl/maps/Aq3avpMeS8SeqytdA" target="_blank" rel="noopener noreferrer"
-                            class="dark_bg link"> г. Киев, пр-т Леси Украинки, 26</a>
-                    </Li>
-                    <Li class="footer-list">
-                        <a href="mailto:info@example.com" class="link text"> info@example.com</a>
-                    </Li>
-                    <Li class="footer-list">
-                        <a href="tel:+380991111111" class="link text">+38 099 111 11 11</a>
-                    </Li>
-                </ul>
-            </address>
-            <div class="footer-soc">
-                <h3 class="dark_bg text-header">присоединяйтесь</h3>
-                <ul class="social-list">
-                    <li class="social-item"> <a class="social-link" href="https://instagram.com/" target="_blank"
-                            rel="noopener noreferer" aria-label="Instagram">
-                            <svg class="social-svg">
-                                <use href="./img/sprite.svg#instagram"></use>
-                            </svg>
-                        </a></li>
-                    <li class="social-item"> <a class="social-link" href="https://twitter.com/" target="_blank"
-                            rel="noopener noreferer" aria-label="twitter">
-                            <svg class="social-svg">
-                                <use href="./img/sprite.svg#twitter"></use>
-                            </svg>
-                        </a></li>
-                    <li class="social-item"> <a class="social-link" href="https://facebook.com/" target="_blank"
-                            rel="noopener noreferer" aria-label="Facebook">
-                            <svg class="social-svg">
-                                <use href="./img/sprite.svg#facebook"></use>
-                            </svg>
-                        </a></li>
-                    <li class="social-item"> <a class="social-link" href="https://linkedin.com/" target="_blank"
-                            rel="noopener noreferer" aria-label="Linkedin">
-                            <svg class="social-svg">
-                                <use href="./img/sprite.svg#linkedin"></use>
-                            </svg>
-                        </a></li>
-                </ul>
-            </div>
-                <div class="subscribe-container">
-                    <h3 class="dark_bg subskribe-title">Подпишитесь на рассылку</h3>
-                    <form class="footer-form">
-                        <input name="subscribe" type="email" class="footer-input" placeholder="E-mail">
-                        <button class="button dark_bg">Подписаться
-                            <svg class="footer-svg">
-                                <use href="./img/sprite.svg#pp"></use>
-                            </svg>
-                        </button>
-                    </form>
+            <div class="tab-row">
+                <address class="address">
+                    <ul class="footer-menu"><a name="Kontakt"></a>
+                        <li class="footer-logo">
+                            <a href="" class="link logo dark_bg"><span class="web">Web</span>Studio</a>
+                        </li>
+                        <Li class="footer-list">
+                            <a href="https://goo.gl/maps/Aq3avpMeS8SeqytdA" target="_blank" rel="noopener noreferrer"
+                                class="dark_bg link"> г. Киев, пр-т Леси Украинки, 26</a>
+                        </Li>
+                        <Li class="footer-list">
+                            <a href="mailto:info@example.com" class="link text"> info@example.com</a>
+                        </Li>
+                        <Li class="footer-list">
+                            <a href="tel:+380991111111" class="link text">+38 099 111 11 11</a>
+                        </Li>
+                    </ul>
+                </address>
+                <div class="footer-soc hed">
+                    <h3 class="dark_bg text-header">присоединяйтесь</h3>
+                    <ul class="social-list">
+                        <li class="social-item"> <a class="social-link" href="https://instagram.com/" target="_blank"
+                                rel="noopener noreferer" aria-label="Instagram">
+                                <svg class="social-svg">
+                                    <use href="./img/sprite.svg#instagram"></use>
+                                </svg>
+                            </a></li>
+                        <li class="social-item"> <a class="social-link" href="https://twitter.com/" target="_blank"
+                                rel="noopener noreferer" aria-label="twitter">
+                                <svg class="social-svg">
+                                    <use href="./img/sprite.svg#twitter"></use>
+                                </svg>
+                            </a></li>
+                        <li class="social-item"> <a class="social-link" href="https://facebook.com/" target="_blank"
+                                rel="noopener noreferer" aria-label="Facebook">
+                                <svg class="social-svg">
+                                    <use href="./img/sprite.svg#facebook"></use>
+                                </svg>
+                            </a></li>
+                        <li class="social-item"> <a class="social-link" href="https://linkedin.com/" target="_blank"
+                                rel="noopener noreferer" aria-label="Linkedin">
+                                <svg class="social-svg">
+                                    <use href="./img/sprite.svg#linkedin"></use>
+                                </svg>
+                            </a></li>
+                    </ul>
                 </div>
+            </div>
+            <div class="subscribe-container">
+                <h3 class="dark_bg subskribe-title">Подпишитесь на рассылку</h3>
+                <form class="footer-form">
+                    <input name="subscribe" type="email" class="footer-input" placeholder="E-mail">
+                    <button class="button dark_bg">Подписаться
+                        <svg class="footer-svg">
+                            <use href="./img/sprite.svg#pp"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
     </footer>
+    <script src="./mobilemenu.js"></script>
 </body>
 </html>

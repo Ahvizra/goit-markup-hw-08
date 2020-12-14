@@ -12,18 +12,14 @@
   <body>
     <header class="header-border">
     <div class="container header">
-      <button class="mobilemenu">
-      <svg class="mobile-open-button" mobile-open>
-      <use href="./img/sprite.svg#mobilemenu"></use>
+      <button class="mobilemenu" type="button" aria-expanded="false" aria-controls="mobile" data-menu-button>
+      <svg width=" 40" height="40" class="">
+      <use class="mobile-open-button" href="./img/sprite.svg#mobilemenu"></use>
+      <use class="mobile-close-button" href="./img/sprite.svg#mobile-x"></use>
       </svg>
       </button>
-      <button class="mobile-close-button">
-        <svg class="mobile-x" mobile-open>
-        <use href="./img/sprite.svg#close-x" mobile-close></use>
-        </svg>
-      </button>
     <a href="" class="logo menu-logo"><span class="web">Web</span>Studio</a>
-      <nav class="flex-item mobile is-close" mobile> 
+      <nav class="flex-item mobile is-open" id="mobile" data-menu> 
           <ul class="flex-item mobile-padding">
             <li class="menu"><a href="./index.html" class="link menu-link curent">Студия</a></li>
             <li class="menu"><a href="./partfolio.html" class="link menu-link">Портфолио</a></li>
@@ -390,5 +386,6 @@
         </form>
 </section>
 <script src="./modal.js"></script>
+<script src="./mobilemenu.js"></script>
   </body>
 </html>
