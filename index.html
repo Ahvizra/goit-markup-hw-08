@@ -86,15 +86,24 @@
         <h2 class="low-header">Чем мы занимаемся</h2>
         <ul class="flex-item work-conteiner">
           <li class="work-img">
-            <img src="./img/index8.jpg" width="370" height="294" alt="wwd1" />
+            <picture>
+              <source srcset="./img/index8.jpg 1x, ./img/index8@2x.jpg 2x">
+             <img src="./img/index8.jpg" width="370" height="294" alt="wwd1" />   
+            </picture>
             <p class="img-disk">Десктопные приложения</p>
           </li>
           <li class="work-img">
-            <img src="./img/index7.jpg" width="370" height="294" alt="wwd2" />
+            <picture>
+              <source srcset="./img/index7.jpg 1x, ./img/index7@2x.jpg 2x">
+              <img src="./img/index7.jpg" width="370" height="294" alt="wwd2" />
+            </picture>
             <p class="img-disk">Мобильные приложения</p>
           </li>
           <li class="work-img">
-            <img src="./img/index6.jpg" width="370" height="294" alt="wwd3" />
+            <picture>
+              <source srcset="./img/index6.jpg 1x, ./img/index6@2x.jpg 2x">
+              <img src="./img/index6.jpg" width="370" height="294" alt="wwd3" />
+            </picture>
             <p class="img-disk">Дизайнерские решения</p>
           </li>
         </ul>
@@ -106,7 +115,12 @@
       <ul class="flex-item work">
         <li class="person"> 
           <figure>
-            <img src="./img/index5.jpg" width="270" height="260" alt="Product Designer">
+            <picture>
+              <source srcset="./img/disktop/index5.jpg 1x, ./img/disktop/index5@2x.jpg 2x" media="(min-width: 1200px)"/>
+              <source srcset="./img/tab/index5.jpg 1x, ./img/tab/index5@2x.jpg 2x" media="(min-width: 768px)"/>
+              <source srcset="./img/mobile/index5.jpg 1x, ./img/mobile/index5@2x.jpg 2x" media="(max-width: 767px)"/>
+              <img src="./img/disktop/index5.jpg" alt="Product Designer"/>
+            </picture>
               <figurecaption> 
                 <p class="name"> Игорь Демьяненко </p>
                 <p class="text name" lang="en">Product Designer</p>
@@ -137,7 +151,12 @@
         </li>
         <li class="person"> 
           <figure>
-          <img src="./img/index4.jpg" width="270" height="260" alt="Frontend Developer">
+          <picture>
+            <source srcset="./img/disktop/index4.jpg 1x, ./img/disktop/index4@2x.jpg 2x" media="(min-width: 1200px)" />
+            <source srcset="./img/tab/index4.jpg 1x, ./img/tab/index4@2x.jpg 2x" media="(min-width: 768px)" />
+            <source srcset="./img/mobile/index4.jpg 1x, ./img/mobile/index4@2x.jpg 2x" media="(max-width: 767px)" />
+            <img src="./img/disktop/index4.jpg" width="270" height="260" alt="Frontend Developer">
+          </picture>
             <figurecaption>
             <p class="name"> Ольга Репина </p>
             <p class="text name" lang="en">Frontend Developer</p>
@@ -172,7 +191,12 @@
         </li>
         <li class="person"> 
           <figure>
-            <img src="./img/index3.jpg" width="270" height="260" alt="Marketing">
+            <picture>
+              <source srcset="./img/disktop/index3.jpg 1x, ./img/disktop/index3@2x.jpg 2x" media="(min-width: 1200px)" />
+              <source srcset="./img/tab/index3.jpg 1x, ./img/tab/index3@2x.jpg 2x" media="(min-width: 768px)" />
+              <source srcset="./img/mobile/index3.jpg 1x, ./img/mobile/index3@2x.jpg 2x" media="(max-width: 767px)" />
+              <img src="./img/disktop/index3.jpg" width="270" height="260" alt="Marketing">
+            </picture>
             <figurecaption>
             <p class="name"> Николай Тарасов </p>
               <p class="text name" lang="en">Marketing</p>
@@ -207,7 +231,12 @@
         </li>
         <li class="person"> 
           <figure>
-            <img src="./img/index.jpg" width="270" height="260" alt="UI Designer">
+            <picture>
+              <source srcset="./img/disktop/index.jpg 1x, ./img/disktop/index@2x.jpg 2x" media="(min-width: 1200px)" />
+              <source srcset="./img/tab/index.jpg 1x, ./img/tab/index@2x.jpg 2x" media="(min-width: 768px)" />
+              <source srcset="./img/mobile/index.jpg 1x, ./img/mobile/index@2x.jpg 2x" media="(max-width: 767px)" />
+              <img src="./img/disktop/index.jpg" width="270" height="260" alt="UI Designer">
+            </picture>
             <figurecaption>
             <p class="name">Михаил Ермаков</p>
             <p class="text name" lang="en">UI Designer</p>
