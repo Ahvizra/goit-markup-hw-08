@@ -5,6 +5,8 @@
   text-align: center;
   @media screen and (min-width: 1200px) {
     text-align: left;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
   .text-header {
     margin-bottom: 0px;
@@ -107,5 +109,9 @@
     justify-content: space-between;
     width: 100%;
     align-items: center;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-left: 0px;
+    padding-right: 93px;
   }
 }

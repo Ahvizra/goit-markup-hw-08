@@ -177,11 +177,17 @@ address {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 450px;
+  width: 400px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 40px;
   box-sizing: border-box;
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -617,7 +623,7 @@ address {
   left: 0;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .curent::after {
     bottom: -29px;
   }
@@ -636,7 +642,7 @@ address {
   left: 0;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .menu-link:hover::after,
   .menu-link:focus::after {
     bottom: -29px;
@@ -698,6 +704,7 @@ address {
     padding-top: 0px;
     padding-bottom: 0px;
     box-shadow: none;
+    z-index: 0;
   }
 }
 
@@ -791,6 +798,8 @@ address {
 @media screen and (min-width: 1200px) {
   .footer {
     text-align: left;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 }
 
@@ -926,6 +935,13 @@ address {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .tab-row {
+    padding-left: 0px;
+    padding-right: 93px;
+  }
+}
+
 .hero {
   font-weight: 900;
   font-size: 22px;
@@ -958,13 +974,13 @@ address {
   background-size: cover;
   display: flex;
   align-items: center;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/heromobile.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/heromobile.png);
   height: 400px;
 }
 
 @media screen and (min-width: 768px) {
   .motivation {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/herotab.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/herotab.png);
     height: 400px;
   }
 }
@@ -1156,6 +1172,7 @@ address {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   width: 100%;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1177,7 +1194,7 @@ address {
 
 @media screen and (min-width: 768px) {
   .person:not(:last-child) {
-    margin-bottom: 0px;
+    margin-bottom: 30px;
   }
 }
 
@@ -1205,6 +1222,12 @@ address {
   padding: 0px;
   margin: 0px;
   list-style-type: none;
+}
+
+@media screen and (min-width: 320px) and (max-width: 450px) {
+  .client-list {
+    justify-content: center;
+  }
 }
 
 .client-link {

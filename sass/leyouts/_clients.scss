@@ -5,6 +5,9 @@
     padding: 0px;
     margin: 0px;
     list-style-type: none;
+    @media screen and (min-width: 320px) and (max-width: 450px) {
+      justify-content: center;
+    }
   }
   &-link {
     display: flex;

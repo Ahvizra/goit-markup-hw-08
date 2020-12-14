@@ -407,7 +407,7 @@ address {
   left: 0;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .curent::after {
     bottom: -29px;
   }
@@ -426,7 +426,7 @@ address {
   left: 0;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .menu-link:hover::after,
   .menu-link:focus::after {
     bottom: -29px;
@@ -488,6 +488,7 @@ address {
     padding-top: 0px;
     padding-bottom: 0px;
     box-shadow: none;
+    z-index: 0;
   }
 }
 
@@ -581,6 +582,8 @@ address {
 @media screen and (min-width: 1200px) {
   .footer {
     text-align: left;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 }
 
@@ -716,6 +719,13 @@ address {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .tab-row {
+    padding-left: 0px;
+    padding-right: 93px;
+  }
+}
+
 .partfolio-pic {
   display: block;
   width: 100%;
@@ -786,9 +796,14 @@ address {
   list-style-type: none;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .part {
     margin-left: -30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .part {
     margin-top: -30px;
   }
 }
